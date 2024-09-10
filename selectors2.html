@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .header{
+            background-color: blue;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            column-gap: 25px;
+            color:white;
+        }
+        nav a{
+            color:white;
+            display: inline-block; 
+            text-decoration: none;
+            padding:20px;
+
+        }
+        nav a:hover{
+            background-color: lightblue;
+        }
+        #profile h1{
+            display: flex;
+        
+            /* border:2px solid white; */
+            height:30px;
+            background-color: white;
+            width:790px;
+            padding: 20px;
+             margin-left:20%;
+            justify-content: center;
+        }
+        #image{
+        
+            margin-top: 30px;
+            background-color: white;
+            width:840px;
+            height:150px;
+            margin-left: 20%;
+        }
+        #image img{
+            border-radius: 25px;
+            margin-left: 2%;
+        }
+        #image p{
+            position: absolute;
+            top:36%;
+            left:27%;
+        }
+        #skills{
+            background-color: white;
+            width:840px;
+            margin-left: 300px;
+            margin-top: 20px;
+        
+        }
+        #skills table{
+            border-color: white;
+            margin-left: 2px;
+        }
+        #work{
+            margin-left: 20%;
+            background-color: white;
+            width:840px;
+            height:500px;
+        }
+        .box1{
+            position: absolute;
+            top:800px;
+            width:300px;
+            height:140px;
+            background-color: lightgrey;
+            margin-left: 22px;
+            border-radius: 15px;
+        }
+        .box2{
+            position: absolute;
+            top:800px;
+            width:300px;
+            height:140px;
+            background-color: lightgrey;
+            left:45%;
+            border-radius: 15px;
+            text-align: center;
+            
+        }
+        .box3{
+            margin-top:250px;
+            width:300px;
+            height:140px;
+            background-color: lightgrey;
+            margin-left: 22px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #content{
+            background-color: white;
+            margin-left: 20%;
+            width:840px;
+            height:400px;
+        }
+        input{
+            width:800px;
+            height:50px;
+            margin-left: 2%;
+            outline:none;
+            border:none;
+            
+        }
+        input:hover{
+            border:2px solid white;
+            outline:auto;
+            width:800px;
+            height:50px;
+            margin-left: 2%;
+        }
+        textarea{
+            width:800px;
+            height:50px;
+            margin-left: 2%;
+            outline: none;
+            border:none;
+        }
+        textarea:hover{
+            border:2px solid white;
+            outline: auto;
+            width:800px;
+            height:50px;
+            margin-left: 2%;
+        }
+        button{
+            background-color: aqua;
+            padding: 2px;
+            border:none;
+            outline: none;
+
+        }
+        .footer{
+            background-color: blue;
+            width:100%;
+            height:50px;
+            margin-top:2%;
+            text-align: center;
+            padding:20px;
+
+        }
+        
+            
+        
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <a href="#profile">Home</a>
+        <a href="#image">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">portfolio</a>
+        <a href="#content">Contact</a>
+        </nav>
+    </div>
+    <div id="profile">
+        <h1>Welcome to portfolio</h1>
+        </div>
+    <div id="image">
+        <h2>About Me</h2>
+        <img src="https://i.pinimg.com/originals/d8/20/95/d8209588924377a85965e305401e924d.jpg" width:60px height="60px">
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+        </div>
+    <div id="skills">
+        <h1>My Skills</h1>
+        <table border="1" style="width:830px" cellpadding=20px cellspacing="0">
+            <thead>
+                <tr bgcolor="lightblue">
+                    <th>skill</th>
+                    <th>proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Html</td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Intermediate</td>
+        
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <div id="work">
+        <h1>My Work</h1>
+    <div class="box1">
+        <center>
+        <img src="./girl.jpg">Project1
+        <h2>Project1</h2>
+        <p>Description of Project One</p></div>
+    <div class="box2">
+        <img src="./girl.jpg">Project2
+        <h2>Project2</h2>
+        <p>Description of Project Two</p>
+    </div>
+    <div class="box3">
+        <img src="./girl.jpg">Project3
+        <h2>Project3</h2>
+        <p>Description of Project Three</p>
+    </div>
+        
+        </center>
+    
+    </div><br>
+    <div id="content">
+        <h1>Contact Me</h1>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="" >
+
+        <label for="Email">Email</label><br>
+        <input type="text" id="Email" placeholder="">
+
+        <label for="Subject">Subject</label><br>
+        <input type="text" id="Subject" placeholder="">
+
+        <label for="Message">Message</label><br>
+        <textarea name="Message"id="Message"></textarea>
+        
+        <button type="submit">Send Message</button>
+    </div>
+    <div class="footer">
+        <p>@2024 My portfolio</p>
+    </div>
+        
+    
+</body>
+</html>
